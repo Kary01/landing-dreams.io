@@ -1,0 +1,123 @@
+:root{
+    --primary-font: 'Hind Siliguri', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: var(--primary-font);
+}
+
+.wrap{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../assets/images/sasha.jpg");
+    opacity: .8;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.nav-bar{
+    list-style: none;
+    width: 300px;
+    height: 45px;
+    padding: 1em;
+}
+
+.nav-bar li{
+    width: 30%;
+    height: 100%;
+    float: left;
+    margin: 0 .2em;
+    text-align: center;
+    font-size: 1.4rem;
+    letter-spacing: .1rem;
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 2.5rem;
+    transition: all 0.5s ease;
+}
+
+.nav-bar li:hover{
+    background-color: #3e3e3e;
+}
+
+.nav-bar li.active{
+    background-color: #3e3e3e;
+}
+
+.content{
+    text-align: center;
+    position: relative;
+    top: 40%;
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: .3rem;
+    color: #ffffff;
+}
+
+/*-------------------------------------------- social media*/
+.share{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    list-style: none;
+}
+
+.share .icon{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #dedede;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin: 5px 0;
+    text-align: center;
+    cursor: pointer;
+}
+
+.share .icon:before{
+    position: absolute;
+    right: 125%;
+    color: wheat;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.share .icon:hover:before{
+    opacity: 1;
+}
+
+.share .fb{
+    background-image: url('../assets/icons/fb.svg');
+}
+
+.share .fb:before{
+    content: "facebook";
+}
+
+.share .tw{
+    background-image: url('../assets/icons/twitter.svg');
+}
+
+.share .tw:before{
+    content: "twitter";
+}
+
+.share .in{
+    background-image: url('../assets/icons/instagram.svg');
+}
+
+.share .in:before{
+    content: "instagram";
+}
